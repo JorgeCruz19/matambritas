@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'BlockBeCnPro';
+	src: url('../font/blockpropluscon-webfont.woff');
+}
+body {
+	overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'BlockBeCnPro';
+}
+.header {
+	background: transparent;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hero {
+	background-image: url('../img/hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 90vh;
+	margin-top: -74px;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #0f202790;
+	background: -webkit-linear-gradient(to right, #2c536490, #203a4390, #0f202790);
+	background: linear-gradient(to right, #2c536490, #203a4390, #0f202790);
+
+	z-index: 1;
+}
+.subtitle {
+	font-size: 3rem;
+	letter-spacing: 2px;
+}
+.subtitle span {
+	font-size: 5rem;
+	letter-spacing: 2px;
+	color: sandybrown;
+}
+.oferta {
+	color: red;
+}
+
+.hero2 {
+	height: 400px;
+	width: 100%;
+}
+
+.hero2 img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+#menu,
+#ofertas,
+#mapid,
+#contacto {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+.social-icon {
+	color: white;
+	font-size: 1.5rem;
+}
+.social-icon:hover {
+	color: tomato;
+	text-decoration: none;
+}
+.opaque {
+	background: #161616ea;
+}
+.card {
+	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover img {
+	opacity: 0.9;
+	cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+	.header {
+		background: #161616ea;
+	}
+	.hero {
+		height: 100vh;
+		margin-top: 0;
+	}
+	#menu,
+	#ofertas,
+	#mapid,
+	#contacto {
+		padding-top: 15rem;
+		padding-bottom: 15rem;
+	}
+}
