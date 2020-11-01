@@ -4,6 +4,9 @@
 }
 body {
 	overflow-x: hidden;
+	background-image: url('../img/bg.svg');
+	background-attachment: fixed;
+	background-size: cover;
 }
 h1,
 h2,
@@ -63,6 +66,11 @@ h6 {
 .hero2 {
 	height: 400px;
 	width: 100%;
+	background-image: url('https://scontent.ftgu4-1.fna.fbcdn.net/v/t1.0-9/34511297_1375006315932529_8139288159239274496_o.jpg?_nc_cat=105&ccb=2&_nc_sid=e3f864&_nc_eui2=AeHmRsmwbP9R1N0noz1FMYM6Tsi8Frk-BdlOyLwWuT4F2Z7SMdKUrGLYrw3vfIzlNUZWtKr5x_pP449Yj996cwFg&_nc_ohc=t1-hQUElQu4AX-ezCQA&_nc_ht=scontent.ftgu4-1.fna&oh=525520dd8182eaa8c2ee81029988faf4&oe=5FC4D1B6');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .hero2 img {
