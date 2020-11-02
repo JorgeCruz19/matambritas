@@ -8,7 +8,6 @@ window.addEventListener('scroll', function () {
 		menu.classList.remove('opaque')
 	}
 })
-
 $('a').click(function () {
 	var sectionTo = $(this).attr('href')
 	$('.navbar-collapse').collapse('hide')

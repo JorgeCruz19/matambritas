@@ -2,11 +2,16 @@
 	font-family: 'BlockBeCnPro';
 	src: url('../font/blockpropluscon-webfont.woff');
 }
+@font-face {
+	font-family: 'fs_sammyregular';
+	src: url('../font/fs_sammy-regular-webfont-webfont.woff');
+}
 body {
 	overflow-x: hidden;
 	background-image: url('../img/bg.svg');
 	background-attachment: fixed;
 	background-size: cover;
+	position: relative;
 }
 h1,
 h2,
@@ -44,10 +49,9 @@ h6 {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background: #0f202790;
-	background: -webkit-linear-gradient(to right, #2c536490, #203a4390, #0f202790);
-	background: linear-gradient(to right, #2c536490, #203a4390, #0f202790);
-
+	background: #0f202770;
+	background: -webkit-linear-gradient(to right, #2c536470, #203a4370, #0f202770);
+	background: linear-gradient(to right, #2c536470, #203a4370, #0f202770);
 	z-index: 1;
 }
 .subtitle {
@@ -62,7 +66,6 @@ h6 {
 .oferta {
 	color: red;
 }
-
 .hero2 {
 	height: 400px;
 	width: 100%;
@@ -72,18 +75,38 @@ h6 {
 	background-position: center;
 	background-attachment: fixed;
 }
-
+#slogan {
+	width: 100%;
+	background-image: url('../img/ourstory.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#slogan h1 {
+	font-size: 5.625rem;
+}
+#slogan p {
+	font-family: 'fs_sammyregular';
+	font-size: 2.25rem;
+}
 .hero2 img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
+.icon-services {
+	font-size: 3.5rem;
+}
+#slogan,
 #menu,
 #ofertas,
-#mapid,
-#contacto {
-	padding-top: 7rem;
-	padding-bottom: 7rem;
+#contacto,
+#acerca,
+#recetas,
+#servicios,
+#empleados,
+#videos {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 .social-icon {
 	color: white;
@@ -96,6 +119,12 @@ h6 {
 .opaque {
 	background: #161616ea;
 }
+.card-header {
+	background-color: #161616;
+}
+.card-header h2 button {
+	color: white !important;
+}
 .card {
 	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -103,6 +132,12 @@ h6 {
 	opacity: 0.9;
 	cursor: pointer;
 }
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
 @media screen and (max-width: 768px) {
 	.header {
 		background: #161616ea;
@@ -111,11 +146,25 @@ h6 {
 		height: 100vh;
 		margin-top: 0;
 	}
+	#slogan,
 	#menu,
 	#ofertas,
-	#mapid,
-	#contacto {
+	#contacto,
+	#acerca,
+	#recetas,
+	#servicios,
+	#empleados,
+	#videos {
 		padding-top: 15rem;
 		padding-bottom: 15rem;
+	}
+	#slogan h1 {
+		font-size: 2.625rem;
+	}
+	#slogan p {
+		font-size: 1.25rem;
+	}
+	.subtitle span {
+		font-size: 3rem;
 	}
 }
